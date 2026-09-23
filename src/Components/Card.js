@@ -1,4 +1,4 @@
-import { click } from "@testing-library/user-event/dist/click";
+
 import React from "react";
 import {FcLike,FcLikePlaceholder} from 'react-icons/fc'
 import { toast } from "react-toastify"
@@ -26,7 +26,7 @@ function Card({course ,liked,setLinked}){
     return (
         <div  className="w-[300px] bg-gray-600 rounded-md overflow-hidden">
             <div className="relative ">
-                <img src={course.image.url}></img>
+                <img src={course.image.url} alt={course.title} />
 
 
                 <div className="absolute w-[40px] h-[40px] bg-white rounded-full right-2 bottom-3 grid place-items-center">
